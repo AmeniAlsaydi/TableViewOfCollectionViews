@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f9B-7W-WGH">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Sections Table View Controller-->
+        <scene sceneID="9qw-QC-g9u">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <tableViewController id="YZF-8X-ZG8" customClass="SectionsTableViewController" customModule="TableViewOfCollectionViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Glb-b8-V5m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <sections>
+                            <tableViewSection headerTitle="Puppys" id="Gja-yx-zew">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dogSectionCell" rowHeight="210" id="f3o-ET-tWs" customClass="DogTableViewCell" customModule="TableViewOfCollectionViews" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="210"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="f3o-ET-tWs" id="lPe-wq-m5Y">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q70-ev-udn">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qD5-br-su7">
+                                                        <size key="itemSize" width="207" height="161"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dogCell" id="cvA-kh-jZN" customClass="DogCollectionViewCell" customModule="TableViewOfCollectionViews" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="24.5" width="207" height="161"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ddG-Ea-cyv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="161"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="MCH-hc-vNT">
+                                                                        <rect key="frame" x="0.0" y="0.5" width="207" height="160"/>
+                                                                        <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="MCH-hc-vNT" secondAttribute="bottom" id="7ab-RW-OFk"/>
+                                                                    <constraint firstItem="MCH-hc-vNT" firstAttribute="leading" secondItem="ddG-Ea-cyv" secondAttribute="leading" id="HBH-UB-A1J"/>
+                                                                    <constraint firstItem="MCH-hc-vNT" firstAttribute="top" secondItem="ddG-Ea-cyv" secondAttribute="top" id="KAv-yU-C16"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="MCH-hc-vNT" secondAttribute="trailing" id="bEI-Tt-AaS"/>
+                                                                </constraints>
+                                                            </collectionViewCellContentView>
+                                                            <size key="customSize" width="207" height="161"/>
+                                                            <connections>
+                                                                <outlet property="dogImageView" destination="MCH-hc-vNT" id="MNM-xf-rgI"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="q70-ev-udn" secondAttribute="trailing" id="Lcf-Gz-MiA"/>
+                                                <constraint firstAttribute="bottom" secondItem="q70-ev-udn" secondAttribute="bottom" id="f2E-xL-nhE"/>
+                                                <constraint firstItem="q70-ev-udn" firstAttribute="top" secondItem="lPe-wq-m5Y" secondAttribute="top" id="fCJ-CH-Za1"/>
+                                                <constraint firstItem="q70-ev-udn" firstAttribute="leading" secondItem="lPe-wq-m5Y" secondAttribute="leading" id="zpj-FY-A5q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="collectionView" destination="q70-ev-udn" id="f1F-eF-cRL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="YZF-8X-ZG8" id="RRk-hx-qtp"/>
+                            <outlet property="delegate" destination="YZF-8X-ZG8" id="AY6-gy-qGx"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="wBj-PE-ouU"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eLV-eY-d71" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="847.82608695652175" y="100.44642857142857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Uhl-km-mPC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="f9B-7W-WGH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BuL-dg-3Co">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YZF-8X-ZG8" kind="relationship" relationship="rootViewController" id="xZt-XB-60M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="04l-cn-U97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="101"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="d.circle" catalog="system" width="64" height="60"/>
+    </resources>
 </document>

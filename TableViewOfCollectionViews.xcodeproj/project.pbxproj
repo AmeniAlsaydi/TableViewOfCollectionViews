@@ -3,29 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B70A5FC023D3C3930077CAEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FBF23D3C3930077CAEB /* AppDelegate.swift */; };
 		B70A5FC223D3C3930077CAEB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FC123D3C3930077CAEB /* SceneDelegate.swift */; };
-		B70A5FC423D3C3930077CAEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FC323D3C3930077CAEB /* ViewController.swift */; };
 		B70A5FC723D3C3930077CAEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70A5FC523D3C3930077CAEB /* Main.storyboard */; };
 		B70A5FC923D3C3950077CAEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70A5FC823D3C3950077CAEB /* Assets.xcassets */; };
 		B70A5FCC23D3C3950077CAEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B70A5FCA23D3C3950077CAEB /* LaunchScreen.storyboard */; };
 		B70A5FD523D3C5170077CAEB /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FD423D3C5170077CAEB /* Secrets.swift */; };
+		B70A5FD723D3C61B0077CAEB /* SectionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FD623D3C61B0077CAEB /* SectionsTableViewController.swift */; };
+		B70A5FDA23D3CCDD0077CAEB /* DogTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FD923D3CCDD0077CAEB /* DogTableViewCell.swift */; };
+		B70A5FDC23D3CDE30077CAEB /* DogCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FDB23D3CDE30077CAEB /* DogCollectionViewCell.swift */; };
+		B70A5FE023D3D8550077CAEB /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FDF23D3D8550077CAEB /* Photo.swift */; };
+		B70A5FE223D3D8C00077CAEB /* FlickrAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A5FE123D3D8C00077CAEB /* FlickrAPIClient.swift */; };
+		B70A5FE523D3D9130077CAEB /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = B70A5FE423D3D9130077CAEB /* ImageKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B70A5FBC23D3C3930077CAEB /* TableViewOfCollectionViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewOfCollectionViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70A5FBF23D3C3930077CAEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B70A5FC123D3C3930077CAEB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B70A5FC323D3C3930077CAEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B70A5FC623D3C3930077CAEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B70A5FC823D3C3950077CAEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B70A5FCB23D3C3950077CAEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B70A5FCD23D3C3950077CAEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B70A5FD423D3C5170077CAEB /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		B70A5FD623D3C61B0077CAEB /* SectionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionsTableViewController.swift; sourceTree = "<group>"; };
+		B70A5FD923D3CCDD0077CAEB /* DogTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTableViewCell.swift; sourceTree = "<group>"; };
+		B70A5FDB23D3CDE30077CAEB /* DogCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCollectionViewCell.swift; sourceTree = "<group>"; };
+		B70A5FDF23D3D8550077CAEB /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		B70A5FE123D3D8C00077CAEB /* FlickrAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B70A5FE523D3D9130077CAEB /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,9 +69,11 @@
 			isa = PBXGroup;
 			children = (
 				B70A5FBF23D3C3930077CAEB /* AppDelegate.swift */,
-				B70A5FD323D3C5040077CAEB /* Secrets */,
 				B70A5FC123D3C3930077CAEB /* SceneDelegate.swift */,
-				B70A5FC323D3C3930077CAEB /* ViewController.swift */,
+				B70A5FD323D3C5040077CAEB /* Secrets */,
+				B70A5FD823D3CC950077CAEB /* CustomCells */,
+				B70A5FDD23D3D78A0077CAEB /* Controllers */,
+				B70A5FDE23D3D8420077CAEB /* Model */,
 				B70A5FC523D3C3930077CAEB /* Main.storyboard */,
 				B70A5FC823D3C3950077CAEB /* Assets.xcassets */,
 				B70A5FCA23D3C3950077CAEB /* LaunchScreen.storyboard */,
@@ -76,6 +88,32 @@
 				B70A5FD423D3C5170077CAEB /* Secrets.swift */,
 			);
 			path = Secrets;
+			sourceTree = "<group>";
+		};
+		B70A5FD823D3CC950077CAEB /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				B70A5FD923D3CCDD0077CAEB /* DogTableViewCell.swift */,
+				B70A5FDB23D3CDE30077CAEB /* DogCollectionViewCell.swift */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		B70A5FDD23D3D78A0077CAEB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B70A5FD623D3C61B0077CAEB /* SectionsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B70A5FDE23D3D8420077CAEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B70A5FDF23D3D8550077CAEB /* Photo.swift */,
+				B70A5FE123D3D8C00077CAEB /* FlickrAPIClient.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +132,9 @@
 			dependencies = (
 			);
 			name = TableViewOfCollectionViews;
+			packageProductDependencies = (
+				B70A5FE423D3D9130077CAEB /* ImageKit */,
+			);
 			productName = TableViewOfCollectionViews;
 			productReference = B70A5FBC23D3C3930077CAEB /* TableViewOfCollectionViews.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +163,9 @@
 				Base,
 			);
 			mainGroup = B70A5FB323D3C3930077CAEB;
+			packageReferences = (
+				B70A5FE323D3D9130077CAEB /* XCRemoteSwiftPackageReference "ImageKit" */,
+			);
 			productRefGroup = B70A5FBD23D3C3930077CAEB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B70A5FC423D3C3930077CAEB /* ViewController.swift in Sources */,
+				B70A5FE023D3D8550077CAEB /* Photo.swift in Sources */,
 				B70A5FD523D3C5170077CAEB /* Secrets.swift in Sources */,
+				B70A5FDC23D3CDE30077CAEB /* DogCollectionViewCell.swift in Sources */,
 				B70A5FC023D3C3930077CAEB /* AppDelegate.swift in Sources */,
+				B70A5FE223D3D8C00077CAEB /* FlickrAPIClient.swift in Sources */,
+				B70A5FDA23D3CCDD0077CAEB /* DogTableViewCell.swift in Sources */,
+				B70A5FD723D3C61B0077CAEB /* SectionsTableViewController.swift in Sources */,
 				B70A5FC223D3C3930077CAEB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B70A5FE323D3D9130077CAEB /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B70A5FE423D3D9130077CAEB /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B70A5FE323D3D9130077CAEB /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B70A5FB423D3C3930077CAEB /* Project object */;
 }
